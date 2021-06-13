@@ -1,0 +1,744 @@
+.header {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    z-index: 4;
+    background:  #313131;
+    display: flex;
+}
+
+.header > h1 {
+    position: relative;
+    font-family: Quicksand;
+    /*font-weight: bold;*/
+    color: white;
+    font-size: 28px;
+    top: 12px;
+    left: 20px;
+}
+
+.header > div {
+    position: relative;
+    top: 12px;
+    left: 6px;
+}
+
+.header > div > img {
+    width: 35px;
+}
+
+aside {
+    color: #fff;
+    width: 45px;
+    padding-left: 20px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom , #02b1db, #313131);
+    border-top-right-radius: 80px;
+    position: fixed;
+    top: 63px;
+    font-family: Quicksand;
+    transition: 0.5s;
+    /*text-decoration: none;*/
+}
+
+aside:hover{
+    width: 250px;
+    transition: 0.5s;
+}
+
+
+
+aside img.dash-png{
+    /*background: white;*/
+    position: absolute;
+    top: 131px;
+    left: 11px;
+}
+
+aside img.car-png{
+    width: 24px;
+    /*background: white;*/
+    position: absolute;
+    top: 180px;
+    left: 11px;
+}
+aside img.customer-png{
+    /*background: white;*/
+    position: absolute;
+    top: 233px;
+    left: 11px;
+}
+
+aside img.rental-png{
+    width: 24px;
+    /*background: white;*/
+    position: absolute;
+    top: 283px;
+    left: 11px;
+}
+aside img.Income-png{
+    width: 24px;
+    /*background: white;*/
+    position: absolute;
+    top: 334px;
+    left: 11px;
+}
+
+
+aside a {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    padding: 12px;
+    padding-left: 20px;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+
+}
+aside a:link{
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #3f5efb;
+    background: #fff;
+    outline: none;
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 25px;
+}
+
+aside a i {
+    margin-right: 5px;
+}
+
+aside a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 25px;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 #fff;
+}
+
+aside a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 51px;
+    right: 25px;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 #fff;
+}
+
+aside p {
+    font-family: Quicksand;
+    font-size: 38px;
+    margin: 30px;
+    padding: 0px 0;
+}
+
+.main-container{
+    width: 1262px;
+    height: 626px;
+    background: transparent;
+    position: absolute;
+    top: 64px;
+    left: 98px;
+    z-index: -1;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////Dashboard/////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.r-users{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 35px;
+    left: 68px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.t-bookings-c{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 35px;
+    left: 510px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.a-bookings-c{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 35px;
+    left: 953px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.av-cars{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 235px;
+    left: 68px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.re-cars{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 235px;
+    left: 510px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.nm-cars{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 235px;
+    left: 953px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.av-drivers{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 435px;
+    left: 68px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.oc-drivers{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 435px;
+    left: 510px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.un-cars{
+    width: 229px;
+    height: 167px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 435px;
+    left: 953px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.r-users>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.r-users>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.r-users>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 34px;
+}
+
+.t-bookings-c>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.t-bookings-c>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.t-bookings-c>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 45px;
+}
+
+.a-bookings-c>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.a-bookings-c>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.a-bookings-c>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 43px;
+}
+
+.av-cars>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.av-cars>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.av-cars>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 44px;
+}
+
+.re-cars>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.re-cars>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.re-cars>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 47px;
+}
+
+.nm-cars>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.nm-cars>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.nm-cars>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 100px;
+    left: 31px;
+}
+
+.av-drivers>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.av-drivers>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.av-drivers>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 34px;
+}
+
+.oc-drivers>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.oc-drivers>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.oc-drivers>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 125px;
+    left: 34px;
+}
+
+.un-cars>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.un-cars>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.un-cars>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 102px;
+    left: 23px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////// MANAGE CARS /////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.manage-cars-option-header {
+    width: 1185px;
+    background-color: gainsboro;
+    height: 60px;
+    position: absolute;
+    right: -30px;
+    top: 11px;
+    left: 22px;
+    margin: auto;
+    border-radius: 4px;
+    z-index: 0;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+
+}
+
+.btnaddCar{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+}
+
+.btnaddCar:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.btnviewCars{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 9px;
+    left: 145px;
+}
+
+.btnviewCars:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.btneditCar{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 9px;
+    left: 284px;
+}
+
+.btneditCar:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.manage-cars-option-container {
+    width: 1200px;
+    height: 450px;
+    position: absolute;
+    right: 0px;
+    top: 122px;
+    left: 0;
+    margin: auto;
+    border-radius: 4px;
+}
+
+/*////////////////////////////////Add-Car/////////////////////////////////////////////////*/
+
+.add-car {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    font-family: Quicksand;
+}
+
+/*////////////////////////////////View-Cars/////////////////////////////////////////////////*/
+
+.view-cars {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#tblViewCars img:hover{
+    transform: scale(1.5);
+}
+
+/*////////////////////////////////Edit-Cars/////////////////////////////////////////////////*/
+
+
+.edit-cars {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+}
+
+#tblEditCars img:hover{
+    transform: scale(1.5);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////View-Customers/////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.view-customers-container {
+    width: 92vw;
+    height: 90vh;
+    background-color: #e6e6e6;
+    position: relative;
+    display: none;
+    /*font-family: Quicksand;*/
+    /*font-weight: normal;*/
+}
+
+.view-customers-container > div {
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    right: -30px;
+    top:72px;
+    left: 0;
+    margin: auto;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////// Income /////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.d-income{
+    width: 334px;
+    height: 222px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 58px;
+    left: 142px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.w-income{
+    width: 334px;
+    height: 222px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 58px;
+    left: 790px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.m-income{
+    width: 334px;
+    height: 222px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 357px;
+    left: 142px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.y-income{
+    width: 334px;
+    height: 222px;
+    border-radius: 40px;
+    background: #0f6674;
+    position: absolute;
+    top: 357px;
+    left: 790px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.sec{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: gainsboro;
+    position: absolute;
+    top: 180px;
+    left: 485px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+
+}
+
+.sec-1{
+    flex: 1 1 50%;
+    padding-bottom: 3rem;
+    position: absolute;
+    top: 227px;
+    left: 536px;
+}
+
+.neumorphic{
+    box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+    font-size: 5rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 1.3rem;
+    display: flex;
+}
+
+.neumorphic--pressed {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.variation2 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.variation2.pressed {
+    color: #5ab9ea;
+}
