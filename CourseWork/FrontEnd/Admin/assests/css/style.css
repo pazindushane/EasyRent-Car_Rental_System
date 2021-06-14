@@ -596,6 +596,9 @@ aside p {
     display: none;
     overflow-x: scroll;
     overflow-y: scroll;
+    position: absolute;
+    top: 116px;
+    left: 63px;
 }
 
 #tblViewCars img:hover{
@@ -611,6 +614,9 @@ aside p {
     background-color: white;
     border-radius: 4px;
     display: none;
+    position: absolute;
+    top: 115px;
+    left: 65px;
 }
 
 #tblEditCars img:hover{
@@ -697,6 +703,103 @@ aside p {
     cursor: pointer;
 }
 
+
+.d-income>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 133px;
+}
+
+.d-income>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.d-income>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 163px;
+    left: 80px;
+    font-size: 30px;
+}
+
+.w-income>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 133px;
+}
+
+.w-income>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.w-income>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 163px;
+    left: 62px;
+    font-size: 30px;
+}
+
+.m-income>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 133px;
+}
+
+.m-income>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.m-income>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 163px;
+    left: 52px;
+    font-size: 30px;
+}
+
+.y-income>div>img{
+    width: 73px;
+    position: absolute;
+    top: 5px;
+    left: 133px;
+}
+
+.y-income>h1{
+    position: absolute;
+    top: 75px;
+    left: 88px;
+    font-family: Quicksand;
+    color: white;
+}
+
+.y-income>p{
+    color: white;
+    font-family: Quicksand;
+    position: absolute;
+    top: 163px;
+    left: 73px;
+    font-size: 30px;
+}
+
 .sec{
     width: 300px;
     height: 300px;
@@ -742,3 +845,185 @@ aside p {
 .variation2.pressed {
     color: #5ab9ea;
 }
+
+.animez{
+    position: absolute;
+    top: 246px;
+    left: 555px;
+    border-radius: 40px;
+    width: 163px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////// Rental /////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.rental-container-header {
+    width: 1185px;
+    background-color: gainsboro;
+    height: 60px;
+    position: absolute;
+    right: -30px;
+    top: 11px;
+    left: 22px;
+    margin: auto;
+    border-radius: 4px;
+    z-index: 0;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+
+}
+
+.btnrequests{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+}
+
+.btnrequests:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.btnc-driver{
+    width: 176px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 9px;
+    left: 145px;
+}
+
+.btnc-driver:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.btnpayments{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 9px;
+    left: 341px;
+}
+
+.btnpayments:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+/*////////////////////////////////View-Rentals/////////////////////////////////////////////////*/
+
+.view-rentals {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    top: 117px;
+    left: 64px;
+}
+
+/*////////////////////////////////Change-Driver/////////////////////////////////////////////////*/
+
+.change-driver {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+}
+
+.tbl-driver-replacements-container > div {
+    display: none;
+}
+
+#btnReplace {
+    display: none;
+}
+
+/*////////////////////////////////Calculate-Payment/////////////////////////////////////////////////*/
+
+
+.calculate-payment {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    top: 112px;
+    left: 65px;
+}
+
+.calculate-payment > div:nth-child(1) {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.calculate-payment > div:nth-child(2) {
+    height: 170px;
+    width: 1000px;
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.calculate-payment > button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 175px;
+}
+
+#additionalPaymentContainer {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+
+#additionalPaymentContainer > input {
+    width: 175px;
+}
+
+#spnEnterMsg {
+    opacity: 0;
+}
+
+

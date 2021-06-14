@@ -1,0 +1,414 @@
+.header {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    z-index: 4;
+    background:  #313131;
+    display: flex;
+}
+
+.header > h1 {
+    position: relative;
+    font-family: Quicksand;
+    /*font-weight: bold;*/
+    color: white;
+    font-size: 28px;
+    top: -14px;
+    left: 58px;
+}
+
+.header > div {
+    position: relative;
+    top: 12px;
+    left: 6px;
+}
+
+.header > div > img {
+    width: 35px;
+}
+
+
+.btnlogin{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 1224px;
+    z-index: 5;
+}
+
+.btnlogin:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.btnsignup{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #02B1DB;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 1085px;
+    z-index: 5;
+}
+
+.btnsignup:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #02B1DB;
+}
+
+.view-car-table {
+    width: 99%;
+    height: 90%;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    position: absolute;
+    top: 9px;
+    left: 3px;
+}
+
+#tblViewCars img:hover{
+    transform: scale(1.5);
+}
+.main-container{
+    width: 1361px;
+    height: 630px;
+    background: transparent;
+    position: absolute;
+    top: 64px;
+    left: 5px;
+    z-index: -1;
+}
+
+.login-form{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+/*=========================== Login Form ======================================================================*/
+
+.loginform{
+    width: 560px;
+    background-color: gainsboro;
+    height: 470px;
+    position: absolute;
+    right: -30px;
+    top: -35px;
+    left: 287px;
+    margin: auto;
+    border-radius: 40px;
+    z-index: 0;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    font-family: Quicksand;
+    font-size: 18px;
+}
+
+.btn-login{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #3498db;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 339px;
+    left: 211px;
+    z-index: 5;
+}
+
+.btn-login:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #3498db;
+}
+
+.btn-signup{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 404px;
+    left: 272px;
+    z-index: 5;
+}
+
+.btn-signup:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #2ecc71;
+}
+
+.btn-cancel{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 405px;
+    left: 408px;
+    z-index: 5;
+}
+
+.btn-cancel:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+.nic-1{
+    position: absolute;
+    top: 162px;
+    left: 144px;
+    width: 260px;
+
+}
+
+.pass-1{
+    position: absolute;
+    top: 201px;
+    left: 144px;
+    width: 260px;
+}
+
+.txtUsername{
+    position: absolute;
+    top: 133px;
+    left: 157px;
+}
+
+.password{
+    position: absolute;
+    top: 216px;
+    left: 156px;
+}
+
+.btn-link-1{
+    position: absolute;
+    top: 288px;
+    left: 187px;
+}
+
+
+/*=============================== Sign Form ======================================*/
+
+
+.signform{
+    width: 669px;
+    background-color: gainsboro;
+    height: 470px;
+    position: absolute;
+    right: -30px;
+    top: 76px;
+    left: -89px;
+    margin: auto;
+    border-radius: 40px;
+    z-index: 0;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    font-family: Quicksand;
+    font-size: 18px;
+}
+
+.txtUsername-1 {
+    position: absolute;
+    top: 100px;
+    left: 48px;
+}
+
+.password-1 {
+    position: absolute;
+    top: 181px;
+    left: 41px;
+}
+.txtAddress {
+    position: absolute;
+    top: 100px;
+    left: 384px;
+}
+
+.txtEmail {
+    position: absolute;
+    top: 182px;
+    left: 384px;
+}
+
+.txtContact {
+    position: absolute;
+    top: 263px;
+    left: 37px;
+}
+
+.btn-G-login{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #3498db;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 405px;
+    left: 374px;
+    z-index: 5;
+}
+
+.btn-G-login:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #3498db;
+}
+
+.btn-G-link{
+    position: absolute;
+    top: 406px;
+    left: 36px;
+}
+
+.btn-G-Sign{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 404px;
+    left: 272px;
+    z-index: 5;
+}
+
+.btn-G-Sign:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #2ecc71;
+}
+
+.btn-G-cancel{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 405px;
+    left: 511px;
+    z-index: 5;
+}
+
+.btn-cancel:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #e74c3c;
+}
+.g-nic {
+    position: absolute;
+    top: 133px;
+    left: 33px;
+    width: 260px;
+}
+
+.password-g {
+    position: absolute;
+    top: 159px;
+    left: 30px;
+    width: 260px;
+}
+
+.address {
+    position: absolute;
+    top: 133px;
+    left: 373px;
+    width: 260px;
+}
+
+.email {
+    position: absolute;
+    top: 213px;
+    left: 374px;
+    width: 260px;
+}
+
+.nicImg {
+    position: absolute;
+    top: 297px;
+    left: 374px;
+    width: 260px;
+}
+
+.nicImg-1 {
+    position: absolute;
+    top: 268px;
+    left: 385px;
+    width: 260px;
+}
+.contact {
+    position: absolute;
+    top: 295px;
+    left: 30px;
+    width: 260px;
+}

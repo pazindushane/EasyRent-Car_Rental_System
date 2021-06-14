@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assests/css/style.css" rel="stylesheet">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<!--<body onload="switchToView()">-->
+<body >
+<header class="header" id="header">
+    <div>
+        <img src="assests/img/brand.png" alt="brand">
+    </div>
+    <h1 class="unreg" id="unreg">Easy Rental - Guest User</h1>
+    <h1 class="reg" id="reg">Easy Rental -  User</h1>
+
+</header>
+
+
+<main>
+
+    <section class="button-section" id="button-section">
+
+        <div>
+
+            <button type="button" class="btnlogin" id="login">Login</button>
+            &nbsp
+            <button type="button" class="btnsignup" id="signup">Register</button>
+
+        </div>
+
+    </section>
+
+    <section class="main-container" id="main-container">
+        <section class="view-car-table" id="view-car-table">
+
+            <table class="table table-success table-hover">
+                <thead class="table-primary">
+                <th>Reg No</th>
+                <th>Brand</th>
+                <th>Type</th>
+                <th>Front</th>
+                <th>Back</th>
+                <th>Side</th>
+                <th>Interior</th>
+                <th>No Of Passengers</th>
+                <th>Transmission</th>
+                <th>Fuel Type</th>
+                <th>Color</th>
+                <th>Daily Rate</th>
+                <th>Monthly Rate</th>
+                <th>Free Mileage Per Day</th>
+                <th>Free Mileage Per Month</th>
+                <th>Price /Km</th>
+                <th>KM Meter Value</th>
+                <th>Available</th>
+
+                </thead>
+                <tbody id="tblViewCars">
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <!--============================ Login ===========================================================================-->
+
+        <section class="login-form" id="login-form">
+
+            <div class="loginform">
+
+                <form enctype="multipart/form-data">
+                    <label for="txtUsername" class="txtUsername">NIC</label>
+                    <div class="nic-1 form-floating mb-2">
+                        <input type="text" id="txtUsername" name="username" class="form-control">
+                    </div>
+                    <label for="password" class="password">Password</label>
+                    <div class="pass-1 form-floating mb-2">
+                        <input type="password" id="password" name="password" class="form-control">
+                    </div>
+                    <button type="button" class="btn-login" id="btn-login">Login
+                    </button>
+                    <button type="button" class="btn-signup" id="btn-signup">Sign Up
+                    </button>
+                    <button type="button" class="btn btn-link btn-link-1" id="btn-forget">Forget Password
+                    </button>
+                    <button type="button" class="btn-cancel" id="btn-cancel">Cancel
+                    </button>
+                </form>
+            </div>
+
+
+        </section>
+
+        <!--========================= Sign up ============================================================================-->
+
+        <section class="Signup-form" id="Signup-form">
+
+            <div class="signform">
+
+                <form enctype="multipart/form-data">
+                    <label for="txtUsername" class="txtUsername-1">NIC</label>
+                    <div class="form-floating mb-3 g-nic" >
+                        <input type="text" id="txt-g-NIC" class="form-control" name="g-nic">
+                    </div>
+                    <label for="password" class="password-1">Password</label>
+                    <div class="form-floating password-g">
+                        <input type="password" id="password-G" class="form-control" name="password-g">
+                    </div>
+                    <label for="txtAddress" class="txtAddress">Address</label>
+                    <div class="address">
+                        <input type="text" id="txtAddress" class="form-control" name="address">
+                    </div >
+                    <label for="txtEmail" class="txtEmail">Email</label>
+                    <div class="email">
+                        <input type="text" id="txtEmail" class="form-control" name="email">
+                    </div>
+                    <label class="nicImg-1" for="nicImg">NIC Photo</label>
+                    <div class="nicImg">
+                        <input class="form-control" type="file" id="nicImg">
+                    </div>
+                    <label for="txtContact" class="txtContact">Contact Number</label>
+                    <div class="contact">
+                        <input type="text" id="txtContact" class="form-control" name="contact">
+                    </div>
+                    <button type="button" class="btn-G-login" id="btn-g-login">Register
+                    </button>
+                    <button type="button" class="btn btn-link btn-G-link" id="btn-g-link">Already Have an Account
+                    </button>
+                    <button type="button" class="btn-G-cancel" id="btn-cn-cancel">Cancel
+                    </button>
+                </form>
+            </div>
+
+        </section>
+    </section>
+
+    <script src="assests/js/bootstrap.min.js"></script>
+    <script src="assests/js/Main.js"></script>
+    <script src="assests/libs/jquery-3.6.0.min.js"></script>
+    <script src="assests/js/UserManage/UserManage.js"></script>
+    <script src="assests/js/reguser/reguser.js"></script>
+    <script src="assests/js/GuestUser/guest.js"></script>
+</main>
+</body>
+</html>

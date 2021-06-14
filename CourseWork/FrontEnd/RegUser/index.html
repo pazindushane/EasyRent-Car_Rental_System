@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg User</title>
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assests/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="header-1" id="header-1">
+    <div>
+        <img src="assests/img/brand.png" alt="brand">
+    </div>
+    <!--    <h1 class="unreg" id="unreg">Easy Rental - Guest User</h1>-->
+    <h1 class="reg" id="reg">Easy Rental - User</h1>
+    <h1 class="mreq" id="mreq">Easy Rental - Make Request</h1>
+    <h1 class="upro" id="upro">Easy Rental - User Profile</h1>
+    <h1 class="rst" id="rst">Easy Rental - Rent Status</h1>
+
+</header>
+
+<main>
+
+    <section class="button-section-1" id="button-section-1">
+
+        <div>
+
+            <button type="button" class="btnreq" id="reqst">Request rent</button>
+            &nbsp
+            <button type="button" class="btnprofile" id="profile">My Profile</button>
+            &nbsp
+            <button type="button" class="btnstatus" id="status">Rent Status</button>
+            &nbsp
+            <button type="button" class="btnlogout" id="logout">Logout</button>
+
+        </div>
+
+    </section>
+
+    <section class="main-container" id="main-container">
+
+        <!--============================== View Cars =================================================================-->
+
+        <section class="view-car-table-1" id="view-car-table-1">
+
+            <table class="table table-success table-hover">
+                <thead class="table-primary">
+                <th>Reg No</th>
+                <th>Brand</th>
+                <th>Type</th>
+                <th>Front</th>
+                <th>Back</th>
+                <th>Side</th>
+                <th>Interior</th>
+                <th>No Of Passengers</th>
+                <th>Transmission</th>
+                <th>Fuel Type</th>
+                <th>Color</th>
+                <th>Daily Rate</th>
+                <th>Monthly Rate</th>
+                <th>Free Mileage Per Day</th>
+                <th>Free Mileage Per Month</th>
+                <th>Price /Km</th>
+                <th>KM Meter Value</th>
+                <th>Available</th>
+
+                </thead>
+                <tbody id="tblViewCars">
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <!--================================= Rent Request =================================================================-->
+
+        <section class="Rent-request" id="Rent-request">
+
+            <div class="req-form  " id="req-form">
+
+                <form enctype="multipart/form-data">
+
+                    <label for="nic" class="nic">NIC</label>
+
+                    <div class="form-floating nicc w-50 col-sm">
+
+                        <input type="text" id="nic" class="form-control" name="nic">
+
+                    </div>
+
+                    <label for="return-D" class="return-D">Return Date</label>
+
+                    <div class="form-floating return-DD w-50 col-sm">
+
+                        <input type="text" id="return-D" class="form-control " name="return-D">
+
+                    </div>
+
+                    <label for="Pickup-D" class="Pickup-D">Pickup</label>
+
+                    <div class="form-floating Pickup-DD w-50 col-sm">
+
+                        <input type="text" id="Pickup-D" class="form-control " name="Pickup-D">
+
+                    </div>
+
+                    <label for="Return-T" class="Return-T">Return Time</label>
+
+                    <div class="form-floating Return-TT w-50 col-sm">
+
+                        <input type="text" id="Return-T" class="form-control " name="Return-T">
+
+                    </div>
+
+                    <label for="Pickup-T" class="Pickup-T">Pickup Time</label>
+
+                    <div class="form-floating Pickup-TT w-50 col-sm">
+
+                        <input type="text" id="Pickup-T" class="form-control " name="Pickup-T">
+
+                    </div>
+
+                    <label for="Car-ID" class="Car-ID">Car Reg</label>
+
+                    <div class="form-floating Car-IDD w-50 col-sm">
+
+                        <input type="text" id="Car-ID" class="form-control " name="Car-ID">
+
+                    </div>
+
+                    <label for="Need-D-1" class="Need-D">Need A Driver?</label>
+
+                    <div class="form-check Need-DD-1">
+
+                        <input type="radio" id="Need-D-1" class="form-check-input" name="Need-D">
+                        <label class="form-check-label" for="Need-D-1">
+                            Yes
+                        </label>
+
+                    </div>
+
+                    <div class="form-check Need-DD-2">
+
+                        <input type="radio" id="Need-D-2" class="form-check-input" name="Need-D">
+                        <label class="form-check-label" for="Need-D-2">
+                            No
+                        </label>
+
+                    </div>
+
+                    <button type="button" class="btn-Send-req" id="btn-Send-req">Request A Car</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+<!--        ======================== Request Status =============================================================-->
+
+        <section class="Request-status">
+
+
+
+        </section>
+
+        <!--        ======================== Request Status =============================================================-->
+
+        <section class="User-P">
+
+            <div class="signform">
+
+                <form enctype="multipart/form-data">
+                    <button type="button" class="btn-G-login" id="btn-g-login">Update
+                    </button>
+                </form>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <script src="assests/js/bootstrap.min.js"></script>
+
+    <script src="assests/js/main.js"></script>
+
+    <script src="assests/libs/jquery-3.6.0.min.js"></script>
+
+    <script src="assests/js/request/request.js"></script>
+
+    <script src="../GuestUser/assests/js/UserManage/UserManage.js"></script>
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,242 @@
+.header-1 {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    z-index: 4;
+    background:  #313131;
+    display: flex;
+}
+
+.header-1 > h1 {
+    position: relative;
+    font-family: Quicksand;
+    /*font-weight: bold;*/
+    color: white;
+    font-size: 28px;
+    top: -13px;
+    left: 58px;
+}
+
+.header-1 > div {
+    position: relative;
+    top: 12px;
+    left: 6px;
+}
+
+.header-1 > div > img {
+    width: 35px;
+}
+
+.btnreq{
+    width: 148px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #3498db;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 780px;
+    z-index: 5;
+}
+
+.btnreq:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #3498db;
+}
+.btnprofile{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 945px;
+    z-index: 5;
+}
+
+.btnprofile:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #2ecc71;
+}
+.btnlogout{
+    width: 118px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 1224px;
+    z-index: 5;
+}
+
+.btnlogout:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+.btnstatus{
+    width: 135px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #e056fd;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 1076px;
+    z-index: 5;
+}
+
+.btnstatus:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #e056fd;
+}
+
+.main-container{
+    width: 1361px;
+    height: 630px;
+    background: transparent;
+    position: absolute;
+    top: 64px;
+    left: 5px;
+    z-index: -1;
+}
+
+.view-car-table-1 {
+    width: 99%;
+    height: 90%;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    position: absolute;
+    top: 9px;
+    left: 3px;
+}
+
+.Rent-request{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.req-form{
+    width: 703px;
+    background-color: gainsboro;
+    height: 470px;
+    position: absolute;
+    right: -30px;
+    top: -35px;
+    left: 212px;
+    margin: auto;
+    border-radius: 40px;
+    z-index: 0;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    font-family: Quicksand;
+    font-size: 18px;
+}
+
+.nic{
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.return-D{
+    margin-left: 30px;
+}
+
+.Pickup-D{
+    margin-left: 30px;
+}
+
+.Return-T{
+    margin-left: 30px;
+}
+
+.Pickup-T{
+    margin-left: 30px;
+}
+
+.Car-ID{
+    margin-left: 30px;
+}
+
+.Need-D{
+    position: absolute;
+    top: 20px;
+    left: 453px;
+}
+
+.Need-DD-1{
+    position: absolute;
+    top: 66px;
+    left: 439px;
+}
+
+.Need-DD-2{
+    position: absolute;
+    top: 67px;
+    left: 549px;
+}
+
+.btn-Send-req{
+    width: 171px;
+    height: 43px;
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #313131;
+    transition: ease-out 0.3s;
+    font-size: 19px;
+    font-family: Quicksand;
+    /* font-weight: bold; */
+    outline: none;
+    position: absolute;
+    top: 392px;
+    left: 444px;
+    z-index: 5;
+}
+
+.btn-Send-req:hover{
+    box-shadow: inset 150px 0 0 0 #313131;
+    cursor: pointer;
+    color: #2ecc71;
+}
+
+
+

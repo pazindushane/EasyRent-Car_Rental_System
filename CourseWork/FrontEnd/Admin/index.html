@@ -12,7 +12,7 @@
     <div>
         <img src="assests/img/brand.png" alt="brand">
     </div>
-    <h1>Easy Rental</h1>
+    <h1>Easy Rental - Admin</h1>
 </header>
 
 <main>
@@ -21,7 +21,7 @@
         <aside>
             <p> Admin </p>
             <img src="assests/icons/icons8-dashboard-layout-24.png" class="dash-png">
-            <a href="javascript:switchToDashboard();" class="btndash"  id="btndash" onclick='switchToDashboard();'>
+            <a href="javascript:switchToDashboard();" class="btndash" id="btndash" onclick='switchToDashboard();'>
                 <i class="fa fa-user-o" aria-hidden="true">
                 </i>
                 Dashboard
@@ -37,7 +37,7 @@
                 Manage Customer
             </a>
             <img src="assests/icons/icons8-dashboard-layout-24.png" class="rental-png">
-            <a href="javascript:void(0)" id="btnrental" onclick="switchToRental()">
+            <a href="javascript:switchToRental();" id="btnrental" onclick="switchToRental()">
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 Rental Request
             </a>
@@ -56,72 +56,72 @@
 
         <section class="dashboard-container">
 
-                <section>
-                    <div class="r-users">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1  id="registeredUsers"></h1>
-                        <p class="fs-5">Registered Users</p>
+            <section>
+                <div class="r-users">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="t-bookings-c">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="totalBookings"></h1>
-                        <p class="fs-5">Total Bookings</p>
+                    <h1 id="registeredUsers"></h1>
+                    <p class="fs-5">Registered Users</p>
+                </div>
+                <div class="t-bookings-c">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="a-bookings-c">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="activeBookings"></h1>
-                        <p class="fs-5">Active Bookings</p>
+                    <h1 id="totalBookings"></h1>
+                    <p class="fs-5">Total Bookings</p>
+                </div>
+                <div class="a-bookings-c">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="av-cars">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="availableCars"></h1>
-                        <p class="fs-5">Available Cars</p>
+                    <h1 id="activeBookings"></h1>
+                    <p class="fs-5">Active Bookings</p>
+                </div>
+                <div class="av-cars">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="re-cars">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="reservedCars"></h1>
-                        <p class="fs-5">Reserved Cars</p>
+                    <h1 id="availableCars"></h1>
+                    <p class="fs-5">Available Cars</p>
+                </div>
+                <div class="re-cars">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="nm-cars">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="carsNeedMaintenance"></h1>
-                        <p class="fs-5" style="text-align: right">Cars<br> Need Maintenance</p>
+                    <h1 id="reservedCars"></h1>
+                    <p class="fs-5">Reserved Cars</p>
+                </div>
+                <div class="nm-cars">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
+                    <h1 id="carsNeedMaintenance"></h1>
+                    <p class="fs-5" style="text-align: right">Cars<br> Need Maintenance</p>
+                </div>
 
-                    <div class="av-drivers">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="availableDrivers"></h1>
-                        <p class="fs-5">Available Drivers</p>
+                <div class="av-drivers">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="oc-drivers">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="occupiedDrivers"></h1>
-                        <p class="fs-5">Occupied Drivers</p>
+                    <h1 id="availableDrivers"></h1>
+                    <p class="fs-5">Available Drivers</p>
+                </div>
+                <div class="oc-drivers">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                    <div class="un-cars">
-                        <div>
-                            <img src="assests/icons/useric.png">
-                        </div>
-                        <h1 id="carsUnderMaintenance"></h1>
-                        <p class="fs-5" style="text-align: right">Cars<br> Under Maintenance</p>
+                    <h1 id="occupiedDrivers"></h1>
+                    <p class="fs-5">Occupied Drivers</p>
+                </div>
+                <div class="un-cars">
+                    <div>
+                        <img src="assests/icons/useric.png">
                     </div>
-                </section>
+                    <h1 id="carsUnderMaintenance"></h1>
+                    <p class="fs-5" style="text-align: right">Cars<br> Under Maintenance</p>
+                </div>
+            </section>
 
         </section>
 
@@ -241,7 +241,8 @@
                         </div>
 
                         <div class="justify-content-around col-3 mx-auto">
-                            <button type="button" class="btn btn-outline-danger" onclick="addCarToTheLot()">Add Car To The Lot
+                            <button type="button" class="btn btn-outline-danger" onclick="addCarToTheLot()">Add Car To
+                                The Lot
                             </button>
                         </div>
                     </form>
@@ -341,6 +342,142 @@
 
         <section class="rental-container">
 
+            <section class="rental-container-header">
+                <div>
+
+                    <button onclick="viewRentals($(this))" type="button" class="btnrequests" id="requestss">Requests
+                    </button>
+                    &nbsp
+                    <button type="button" class="btnc-driver" id="c-driver">Change Driver</button>
+                    &nbsp
+                    <button onclick="viewRequestsForPayment($(this))" type="button" class="btnpayments" id="payments">
+                        Payments
+                    </button>
+                </div>
+            </section>
+
+            <section class="view-rentals" style="overflow-y: scroll; overflow-x: scroll">
+
+                <table class="table table-bordered table-hover">
+                    <thead class="table-primary">
+                    <th>Rent ID</th>
+                    <th>Duration Plan</th>
+                    <th>Cus ID</th>
+                    <th>Pickup Date</th>
+                    <th>Return Date</th>
+                    <th>Pickup Venue</th>
+                    <th>Return Venue</th>
+                    <th>Pickup Time</th>
+                    <th>Return Time</th>
+                    <th>Driver IDs</th>
+                    <th>Driver Names</th>
+                    <th>Edit Drivers</th>
+                    <th>Car Reg No's</th>
+                    <th>Rent State</th>
+                    <th>Description</th>
+                    <th>Accept/<br>Deny</th>
+                    </thead>
+                    <tbody id="viewRentalsTable">
+
+
+                    </tbody>
+                </table>
+
+
+            </section>
+
+            <section class="change-driver">
+
+                <div class="row justify-content-around">
+                    <div class="col-4 pt-4 mt-3" style="height: 350px; overflow-y: scroll">
+                        <table class="table table-hover table-bordered">
+                            <thead class="table-primary">
+                            <th>Driver ID</th>
+                            <th>Driver Name</th>
+                            <th>Replacement</th>
+                            </thead>
+                            <tbody id="tblCurrentDrivers">
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="col-4 pt-4 mt-3 tbl-driver-replacements-container" style="height: 350px;">
+                        <div>
+                            <table class="table table-hover table-bordered">
+                                <thead class="table-primary">
+                                <th>Driver ID</th>
+                                <th>Driver Name</th>
+                                </thead>
+                                <tbody id="tblDriverReplacements">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <button type="button" class="btn btn-danger" style="position: absolute; left: 310px"
+                            id="btnCancel">Cancel
+                    </button>
+                    <button type="button" class="btn btn-success" style="position: absolute; left: 400px"
+                            id="btnFinalizeDrivers">Finalize
+                    </button>
+                    <button id="btnReplace" type="button" class="btn btn-warning"
+                            style="position: absolute; right: 100px">Replace
+                    </button>
+                </div>
+
+            </section>
+
+            <section class="calculate-payment container-fluid">
+
+                <div class="row">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-primary">
+                        <th>Rent ID</th>
+                        <th>Duration Plan</th>
+                        <th>Cus ID</th>
+                        <th>Pickup Date</th>
+                        <th>Return Date</th>
+                        <th>Pickup Venue</th>
+                        <th>Return Venue</th>
+                        <th>Driver IDs</th>
+                        <th>Driver Names</th>
+                        <th>Calculate Payment</th>
+                        </thead>
+                        <tbody id="tblCalculatePayment">
+                        <tr>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-primary">
+                        <th>Reg No</th>
+                        <th>Brand</th>
+                        <th>Type</th>
+                        <th>Color</th>
+                        <th>Waiver Deduction</th>
+                        <th>Km Meter Value</th>
+                        </thead>
+                        <tbody id="tblCarsForPayment">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form-group" id="additionalPaymentContainer">
+                    <label for="txtAdditionalPayment">+Additional</label>
+                    <input type="number" class="form-control" id="txtAdditionalPayment">
+                </div>
+                <button type="button" class="btn btn-warning font-weight-bold" id="btnFinalizePayment">Finalize
+                    Payment
+                </button>
+
+            </section>
+
         </section>
 
         <!--===================================== End Of Rental ==================================-->
@@ -357,30 +494,38 @@
             <div class="calculate-income">
                 <div>
                     <div class="d-income">
-                        <p>Daily Income</p>
                         <div>
-                            <h1 id="dailyIncome"></h1>
+                            <img src="assests/icons/useric.png">
                         </div>
+                        <p>Daily Income</p>
+                        <h1 id="dailyIncome"></h1>
                     </div>
                     <div class="w-income">
-                        <p>Weekly Income</p>
+
                         <div>
-                            <h1 id="weeklyIncome"></h1>
+                            <img src="assests/icons/useric.png">
                         </div>
+                        <h1 id="weeklyIncome"></h1>
+                        <p>Weekly Income</p>
                     </div>
                 </div>
                 <div>
                     <div class="m-income">
-                        <p>Monthly Income</p>
+
                         <div>
-                            <h1 id="monthlyIncome"></h1>
+                            <img src="assests/icons/useric.png">
                         </div>
+                        <h1 id="monthlyIncome"></h1>
+                        <p>Monthly Income</p>
                     </div>
                     <div class="y-income">
-                        <p>Yearly Income</p>
+
                         <div>
-                            <h1 id="yearlyIncome"></h1>
+                            <img src="assests/icons/useric.png">
+
                         </div>
+                        <h1 id="yearlyIncome"></h1>
+                        <p>Yearly Income</p>
                     </div>
                 </div>
                 <div class="sec"></div>
@@ -388,6 +533,9 @@
                     <div class="neumorphic neumorphic--pressed variation2 pressed">
 
                     </div>
+                </div>
+                <div>
+                    <img class="animez" src="assests/img/ezgif.com-gif-maker.gif">
                 </div>
 
             </div>
@@ -401,6 +549,8 @@
     <script src="assests/js/Main.js"></script>
     <script src="assests/js/bootstrap.min.js"></script>
     <script src="assests/libs/jquery-3.6.0.min.js"></script>
+    <script src="assests/js/managecars/managecars.js"></script>
+    <script src="assests/js/rental-req/rental.js"></script>
 
 </main>
 </body>
