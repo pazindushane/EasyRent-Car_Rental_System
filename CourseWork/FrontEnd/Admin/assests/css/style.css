@@ -29,8 +29,8 @@
 
 aside {
     color: #fff;
-    width: 45px;
-    padding-left: 20px;
+    width: 250px;
+    padding-left: 33px;
     height: 100vh;
     background-image: linear-gradient(to bottom , #02b1db, #313131);
     border-top-right-radius: 80px;
@@ -38,50 +38,71 @@ aside {
     top: 63px;
     font-family: Quicksand;
     transition: 0.5s;
-    /*text-decoration: none;*/
+    left: -200px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.side-panel-top {
+    color: #fff;
+    height: 100vh;
+    width: 50px;
+    background-image: linear-gradient(to bottom , #02b1db, #313131);
+    position: fixed;
+    left: 0;
+    z-index: 3;
+    top: 63px;
+    border-top-right-radius: 50px;
+}
+
+.side-panel-top:hover + aside {
+    left: 0;
+    transition: 0.5s;
 }
 
 aside:hover{
-    width: 250px;
+    left: 0;
     transition: 0.5s;
 }
 
 
 
-aside img.dash-png{
-    /*background: white;*/
+.dash-png{
+    width: 35px;
+    /* background: white; */
     position: absolute;
-    top: 131px;
-    left: 11px;
+    top: 123px;
+    left: 8px;
 }
 
-aside img.car-png{
-    width: 24px;
-    /*background: white;*/
+.car-png{
+    width: 40px;
+    /* background: white; */
     position: absolute;
-    top: 180px;
-    left: 11px;
+    top: 171px;
+    left: 6px;
 }
-aside img.customer-png{
-    /*background: white;*/
+.customer-png{
+    width: 34px;
+    /* background: white; */
     position: absolute;
-    top: 233px;
-    left: 11px;
+    top: 223px;
+    left: 8px;
 }
 
-aside img.rental-png{
-    width: 24px;
-    /*background: white;*/
+.rental-png{
+    width: 40px;
+    /* background: white; */
     position: absolute;
-    top: 283px;
-    left: 11px;
+    top: 270px;
+    left: 5px;
 }
-aside img.Income-png{
-    width: 24px;
-    /*background: white;*/
+.Income-png{
+    width: 43px;
+    /* background: white; */
     position: absolute;
-    top: 334px;
-    left: 11px;
+    top: 320px;
+    left: 3px;
 }
 
 
@@ -93,7 +114,7 @@ aside a {
     padding-left: 20px;
     text-decoration: none;
     -webkit-tap-highlight-color:transparent;
-
+    cursor: pointer;
 }
 aside a:link{
     text-decoration: none;
@@ -107,7 +128,9 @@ aside a:hover {
     background-color: #fff;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    left: 25px;
+    left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 aside a i {
@@ -119,11 +142,12 @@ aside a:hover::after {
     position: absolute;
     background-color: transparent;
     bottom: 100%;
-    right: 25px;
+    right: 0px;
     height: 35px;
     width: 35px;
-    border-bottom-right-radius: 18px;
-    box-shadow: 0 20px 0 0 #fff;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 15px 0 0 #fff;
+    cursor: pointer;
 }
 
 aside a:hover::before {
@@ -131,18 +155,19 @@ aside a:hover::before {
     position: absolute;
     background-color: transparent;
     top: 51px;
-    right: 25px;
+    right: 0px;
     height: 35px;
     width: 35px;
-    border-top-right-radius: 18px;
-    box-shadow: 0 -20px 0 0 #fff;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -15px 0 0 #fff;
+    cursor: pointer;
 }
 
 aside p {
     font-family: Quicksand;
     font-size: 38px;
-    margin: 30px;
-    padding: 0px 0;
+    margin: 27px;
+    padding: 2px 0;
 }
 
 .main-container{

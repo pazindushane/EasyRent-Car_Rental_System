@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class StandardResponse {
     private String code;
     private String message;
-    private String data;
+    private Object data;
 }
